@@ -17,8 +17,7 @@ router.get('/:id', (req, res) => {
     res.status(404).send(errRoute);
     return;
   }
-
-  res.send(`Пользователь: ${JSON.stringify(user)}`);
+  res.send(user);
 });
 
 module.exports = router;
